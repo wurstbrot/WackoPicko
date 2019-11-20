@@ -27,7 +27,7 @@ function our_header($selected = "", $search_terms = "")
 	    <li class="<?php if($selected == "home"){ echo 'current'; } ?>"><a href="/users/home.php"><span>Home</span></a></li>
 	    <li class="<?php if($selected == "upload"){ echo 'current'; } ?>"><a href="/pictures/upload.php"><span>Upload</span></a></li>
 	    <li class="<?php if($selected == "recent"){ echo 'current'; } ?>"><a href="/pictures/recent.php"><span>Recent</span></a></li>
-            <li class="<?php if($selected == "guestbook"){ echo 'current'; } ?>"><a href="/guestbook.php"><span>Guestbook</span></a></li>
+      <li class="<?php if($selected == "guestbook"){ echo 'current'; } ?>"><a href="javascript:window.location.href='/guestbook.php';"><span>Guestbook</span></a></li>
 
       <?php if (Users::is_logged_in()) { ?><li class="<?php if($selected == "cart"){ echo 'current'; } ?>"><a href="/cart/review.php"><span>Cart</span></a></li> <?php } ?>
 	  </ul>
